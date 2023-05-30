@@ -61,6 +61,25 @@ function exercicio04(x, y) {
   let resto = x % y;
   console.log(resto);
 }
-exercicio04(1,1);
+// exercicio04(1,1);
 
 // 05 - Criar um algoritmo que leia a idade de uma pessoa expressa em anos e apresente na tela esta idade expressa em meses e dias.
+
+function exercicio05(idade) {
+  if (typeof idade !== "number" || idade <= 0) {
+    console.log("Idade inválida.");
+    return;
+  }
+
+  let meses = idade * 12;
+  let dias = idade * 365;
+
+  console.log(
+    `Você tem ${idade} anos de idade, o que equivale a ${meses} meses e ${dias} dias.`
+  );
+}
+
+// exercicio05(2);
+
+// 06 - Criar um algoritmo que leia a idade de uma pessoa expressa em anos, mês e dias e apresente na tela a idade dessa pessoa expressa apenas em dias. 
+//Considerar ano com 365 dias e mês com 30 dias.
