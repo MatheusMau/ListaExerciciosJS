@@ -94,7 +94,7 @@ function exercicio05(num1, num2) {
 }
 // exercicio05(5, 10);
 
-// 06 Criar um algoritmo que leia uma velocidade e caso o valor lido seja maior que 70 apresentar na tela Multado.
+// 06 e 07 Criar um algoritmo que leia uma velocidade e caso o valor lido seja maior que 70 apresentar na tela Multado.
 function exercicio06(velocidade){
     if ( typeof velocidade !== "number"){
         console.log("Inválido");
@@ -105,7 +105,28 @@ function exercicio06(velocidade){
         console.log("Multado");
     }
     else{
-        console.log("Se beber não dirija");
+        console.log("Não multado");
     }
 }
 // exercicio06(71)
+
+
+//08 Uma empresa decide dar aumento de 15% aos funcionários cujo salário é inferior a 500 reais. 
+//Criar um algoritmo que leia o salário de um funcionário e apresente na tela o valor do salário reajustado ou o valor do salário informado caso ele não tenho direito ao reajuste.
+
+function exercicio08(y){
+  if (typeof y !== "number"){
+    console.log("Inválido");
+    return;
+  }
+  let reajuste = (y * 0.15) + y;
+
+  if ( y < 500){
+    console.log(`Salário reajustado para: ${reajuste}`);
+  }
+  else{
+    console.log(`Salário de ${y} não tem direito ao reajuste`)
+  }
+
+}
+// exercicio08(300)

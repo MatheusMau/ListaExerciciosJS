@@ -83,3 +83,59 @@ function exercicio05(idade) {
 
 // 06 - Criar um algoritmo que leia a idade de uma pessoa expressa em anos, mês e dias e apresente na tela a idade dessa pessoa expressa apenas em dias. 
 //Considerar ano com 365 dias e mês com 30 dias.
+
+function exercicio06(a,m,d){
+
+  if(typeof a !== "number" || typeof m !== "number" || typeof d !== "number" ){
+    console.log("Inválido");
+    return;
+  }
+
+  if (m > 1 || m > 12){
+    console.log(`Informe um mês correto`);
+    return;
+  }
+  else if ( d < 1 || 30){
+    console.log(`Informe o dia correto`);
+    return;
+  }
+
+  let ano = a  * 365;
+  let mes = m * 30;
+  let dias = d;
+  let total = ano + mes + dias;
+  
+  console.log(`Idade em dias: ${total}`);
+
+}
+// exercicio06(1,12,30)
+
+//Exercicio 07 Criar um algoritmo que leia a idade de uma pessoa expressa em dias e apresente na tela a idade dessa pessoa expressa em anos, meses e dias. 
+//Considerar ano com 365 dias e mês com 30 dias.
+
+function exercicio07(x){
+if (typeof x !== "number" || x <= 0) {
+  console.log("Idade inválida.");
+  return;
+}
+
+let anos = x / 365;
+let meses = (x % 365) / 30
+let dias = (x % 365) % 30;
+console.log(`${anos} ${anos > 1 ? "Anos" : "Ano"}`);
+console.log(`${meses} ${meses > 1 ? "Meses" : "Mes"}`);
+console.log(`${dias} ${dias > 1 ? "Dias" : "Dia"}`);
+}
+// exercicio07(29)
+
+//08 Criar um algoritmo que receba uma determinada hora (hora e minutos separados) e apresente na tela a hora em minutos.
+
+function exercicio08(h,m){
+  if (typeof h !== "number" || typeof m !== "number"){
+    console.log("inválido");
+    return;
+  }
+  let total = (h*60) + m;
+  console.log(`${h} horas e ${m} minutos = ${total} minutos.`)
+}
+exercicio08(25, 5);
