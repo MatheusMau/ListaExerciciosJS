@@ -130,3 +130,16 @@ function exercicio08(y){
 
 }
 // exercicio08(300)
+function exercicio09(y) {
+  if (typeof y !== "number") {
+    console.log("Inválido");
+    return;
+  }
+  let reajuste = y * 0.15 + y;
+
+  if (y < 500) {
+    console.log(`Salário reajustado para: ${reajuste}`);
+  } else {
+    console.log(`Salário de ${y} não tem direito ao reajuste`);
+  }
+}

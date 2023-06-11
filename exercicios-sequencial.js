@@ -138,4 +138,10 @@ function exercicio08(h,m){
   let total = (h*60) + m;
   console.log(`${h} horas e ${m} minutos = ${total} minutos.`)
 }
-exercicio08(25, 5);
+// exercicio08(25, 5);
+
+
+  
+  
+  
+  
